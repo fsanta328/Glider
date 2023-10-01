@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class UpdraftForce : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public float updraftStrength = 1000f; // Adjust the strength of the updraft force
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        Debug.Log("hit");
+
+        // Check if the collider inside the updraft zone is the glider's collider
+        // if (other.CompareTag("Glider"))
+        {
+            Debug.Log("hit glider");
+            Rigidbody gliderRb = other.GetComponent<Rigidbody>();
+
+            // Apply the updraft force to the glider in the upward direction
+            gliderRb.AddForce(Vector3.up * updraftStrength);
+        }
     }
 }

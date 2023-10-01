@@ -160,4 +160,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gliderRigidbody: {fileID: 8175464144021589640}
-  glideUp: {x: 60, y: 100, z: 0}
+  glideUp: {x: 60, y: 50, z: 0}
