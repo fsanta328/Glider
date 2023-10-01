@@ -1,18 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Rigidbody gliderRigidbody;
 
-    // Update is called once per frame
-    void Update()
+    public Vector3 glideUp;
+
+    public void Update()
     {
-        
+        if (Input.GetKey(KeyCode.Space))
+        {
+            gliderRigidbody.AddForce(glideUp, ForceMode.Force);
+        }
     }
 }
