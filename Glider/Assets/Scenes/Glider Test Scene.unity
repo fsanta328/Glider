@@ -1222,7 +1222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b78ceada5e368c42ac84ecb0659c4a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gliderPrefab: {fileID: 3303185637382395147, guid: 5cf0aec03f60a3c4d94e86df59d1483d, type: 3}
+  gliderPrefab: {fileID: 7931884090986677431, guid: 192bc9ff8e737e64cabf02ff07e473f6, type: 3}
   startPosition: {fileID: 1737994828}
   gameCamera: {fileID: 219362002}
 --- !u!4 &1366091176
