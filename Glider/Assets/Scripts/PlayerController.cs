@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public Vector3 glideUp;
 
     public delegate void KeyCodePressed(KeyCode keyCode);
-    public static event KeyCodePressed OnKeyCodePress;
+    public event KeyCodePressed OnKeyCodePress;
 
     public void Update()
     {
@@ -32,6 +32,5 @@ public class PlayerController : MonoBehaviour
                 OnKeyCodePress(KeyCode.Mouse0);
             }
         }
-
     }
 }
