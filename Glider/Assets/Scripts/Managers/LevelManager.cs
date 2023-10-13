@@ -8,9 +8,18 @@ public class LevelManager : MonoBehaviour
     public Camera gameCamera;
 
     protected GameObject glider;
+    public GameObject Glider { get { return glider; } }
+
+    private static LevelManager instance;
+
+    public static LevelManager Instance()
+    {
+        return instance;
+    }
 
     public LevelManager()
     {
+        instance = this;
     }
 
     public void Start()
@@ -20,7 +29,7 @@ public class LevelManager : MonoBehaviour
         if (glider != null && gameCamera != null)
         {
             CameraController camController = gameCamera.GetComponent<CameraController>();
-            if ( camController != null)
+            if (camController != null)
             {
                 PlayerController controller = glider.GetComponent<PlayerController>();
 

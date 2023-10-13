@@ -8,10 +8,13 @@ namespace Assets.Scripts
         [NonSerialized]
         public Transform targetGlider;
 
+        public int yAxisElasticity;
+
         public void Update()
         {
             if (targetGlider == null)
             {
+                Debug.Log("Unassigned target for camera tracking.");
                 return;
             }
 
