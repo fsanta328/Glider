@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gliderRigidbody: {fileID: 6031881072602225392}
-  glideUp: {x: 0.5, y: 1, z: 0}
+  glideUp: {x: 4, y: 8, z: 0}
   pitchToGround: {x: 0, y: 0, z: 10}
 --- !u!64 &8793858480262842833
 MeshCollider:
